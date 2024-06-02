@@ -6,60 +6,106 @@
     <title>Blog</title>
   </head>
   <body>
-    <h1>>_blog</h1>
     <!-- Make it look like a terminal! -->
+    <h1>>_blog</h1>
     <hr />
     <nav>
-      <a href="login.html">Login</a
-      ><!-- Only I will be able to create blog posts. Use WYSIWYG? -->
+      <!-- Only I will be able to create blog posts. Use WYSIWYG? -->
+      <a href="login.html">Login</a>
       <a href="register.html">Register</a>
     </nav>
     <section>
-      <h2>01 JUN 2024</h2>
       <!-- Will use DD MMM YYYY dating for all posts -->
+      <h2>01 JUN 2024</h2>
+      <!-- article element used for posts -->
       <article>
-        <!-- article element used for posts -->
         <h3>First Post!</h3>
+        <a href="https://homestarrunner.com/sbemails"
+          ><img src="assets/strongbad.png" alt="Strong Bad"
+        /></a>
         <p>This is my first official blog post! Welcome!</p>
-        <ul>
-          <b>Goals for this blog:</b>
-          <li>Document learning</li>
-          <li>
-            Share projects, struggles, and cool things I learn along the way
-          </li>
-          <li>Connect with other creators</li>
-          <li>Have fun!</li>
-        </ul>
-        <h4>What I'm Working On:</h4>
-        <p>
-          I just finished a
-          <a href="https://stepweaver.github.io/stepweaver-2" target="_blank"
-            >React portfolio</a
-          >. 👈Check it out!
-        </p>
-        <!-- win + . or win + ; for emojis -->
-        <p>I'm building a Squarespace site 🤣 for my first business clent.</p>
-        <p>
-          Modern Web Dev class at Notre Dame - Guided focus! Discussions about
-          code! Meet some other developers! I'm excited! 😃
-        </p>
-        <p>
-          Building a NAS - Having two kids eats up A LOT of storage space on the
-          phones.
-        </p>
-        <p>Integrating this blog with my portfolio.</p>
-        <p>CODE!</p>
+        <!-- I don't like the way this list renders -->
+        <table cellpadding="5">
+          <tr>
+            <th align="left">Goals for this blog:</th>
+            <th align="left">Future features of this blog:</th>
+          </tr>
+          <tr>
+            <td>Document learning</td>
+            <td>Allow registered users to comment on my posts.</td>
+          </tr>
+          <tr>
+            <td>
+              Share projects, struggles, and cool things I learn along the way
+            </td>
+            <td>Share podcasts. I LOVE PODCASTS!</td>
+          </tr>
+          <tr>
+            <td>Connect with other creators</td>
+            <td>Embed videos</td>
+          </tr>
+          <tr>
+            <td>Have fun!</td>
+            <td>Affiliate marketing?</td>
+          </tr>
+        </table>
+        <table cellpadding="5">
+          <tr>
+            <th align="left">What I'm Working On:</th>
+          </tr>
+          <tr>
+            <td>
+              I just finished a
+              <a
+                href="https://stepweaver.github.io/stepweaver-2"
+                target="_blank"
+                >React portfolio</a
+              >. 👈Check it out!
+            </td>
+          </tr>
+          <tr>
+            <td>
+              I'm building a Squarespace site 🤣 for my first business clent.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Modern Web Dev class at Notre Dame - Guided focus! Discussions
+              about code! Meet some other developers! I'm excited! 😃
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Building a NAS - Having two kids eats up A LOT of storage space on
+              the phones.
+            </td>
+          </tr>
+          <tr>
+            <td>Integrating this blog with my portfolio.</td>
+          </tr>
+          <tr>
+            <td>CODE!</td>
+          </tr>
+        </table>
+        <br />
+        <form>
+          <input type="radio" id="like" name="feedback" value="like" />
+          <label for="like">👍Like</label><br />
+          <input type="radio" id="dislike" name="feedback" value="dislike" />
+          <label for="dislike">👎Dislike</label><br />
+        </form>
+        <br />
+        <!-- Only registerered users will be able to comment -->
+        <form
+          action="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzYyMHl2amdmNHhsMHN4c2hqNWNyenc3d3owd3pxODNoMG54YTNybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ny3TDYfgbFD40Sh25K/giphy.gif"
+        >
+          <!-- absolute path -->
+          <label for="comment">Comment:</label><br />
+          <textarea id="comment" name="comment" rows="4" cols="50"></textarea
+          ><br />
+          <input type="submit" value="Submit" />
+        </form>
       </article>
-      <!-- Only registerered users will be able to comment -->
-      <form
-        action="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzYyMHl2amdmNHhsMHN4c2hqNWNyenc3d3owd3pxODNoMG54YTNybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ny3TDYfgbFD40Sh25K/giphy.gif"
-      >
-        <!-- absolute path -->
-        <label for="comment">Comment:</label><br />
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea
-        ><br />
-        <input type="submit" value="Submit" />
-      </form>
     </section>
   </body>
 </html>
