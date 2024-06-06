@@ -6,24 +6,26 @@
     <title>Register</title>
   </head>
   <body>
-    <h1>>_Login</h1>
+    <h1>>_Register</h1>
     <hr />
     <nav>
-      <a href="index.html">Home</a>
-      <a href="register.html">Register</a>
+      <a href="/">Home</a>
+      <a href="/login/index.html">Login</a>
     </nav>
     <br />
     <div>
-      <form action="index.html">
+      <form action="/registered/index.html">
         <!-- relative path -->
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" /><br />
         <label for="email">Email:</label><br />
         <input type="email" id="email" name="email" /><br />
         <label for="password">Password:</label><br />
         <input type="password" id="password" name="password" /><br />
-        <input type="submit" value="Login" />
+        <input onclick="location.href='registered.html'" type="submit" value="Register" /><!-- not working -->
       </form>
       <br />
-      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='/'">Home</button>
     </div>
   </body>
 </html>
