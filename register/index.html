@@ -12,22 +12,28 @@
     </nav>
     <div>
       <h1>>_register</h1>
+      <hr />
       <form action="../registerSuccess/index.html">
         <!-- relative path -->
-        <label for="username">Username:</label><br />
+        <label for="username"><b>Username</b></label><br />
         <input type="text" placeholder="Enter Username" id="username" name="username" /><br />
-        <label for="email">Email:</label><br />
+        <label for="email"><b>Email</b></label><br />
         <input type="email" placeholder="Enter Email" id="email" name="email" /><br />
-        <label for="password">Password:</label><br />
-        <input type="password" placeholder="Enter Password" id="password" name="password" />
+        <!-- <input type="email" placeholder="Enter Email" id="email" name="email" required /><br /> -->
+        <label for="password"><b>Password</b></label><br />
+        <input type="password" placeholder="Enter Password" id="password" name="password" /><br />
+        <!-- <input type="password" placeholder="Enter Password" id="password" name="password" required /> -->
+        <label for="psw-repeat"><b>Repeat Password</b></label><br />
+        <input type="psw-repeat" placeholder="Enter Password" id="psw-repeat" name="psw-repeat" />
+        <!-- <input type="password" placeholder="Enter Password" id="password" name="password" required /> -->
         <input
           onclick="location.href='registered.html'"
           type="submit"
           value="Register"
         /><!-- not working -->
       </form>
-      <br />
-      <button onclick="location.href='../index.html'">Home</button>
+      <hr />
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
     </div>
   </body>
 </html>
