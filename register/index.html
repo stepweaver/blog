@@ -9,12 +9,12 @@
     <h1>>_Register</h1>
     <hr />
     <nav>
-      <a href="/">Home</a>
-      <a href="/login/index.html">Login</a>
+      <a href="../index.html">Home</a>
+      <a href="../login/index.html">Login</a>
     </nav>
     <br />
     <div>
-      <form action="/registered/index.html">
+      <form action="../registerSuccess/index.html">
         <!-- relative path -->
         <label for="username">Username:</label><br />
         <input type="text" id="username" name="username" /><br />
@@ -22,10 +22,14 @@
         <input type="email" id="email" name="email" /><br />
         <label for="password">Password:</label><br />
         <input type="password" id="password" name="password" /><br />
-        <input onclick="location.href='registered.html'" type="submit" value="Register" /><!-- not working -->
+        <input
+          onclick="location.href='registered.html'"
+          type="submit"
+          value="Register"
+        /><!-- not working -->
       </form>
       <br />
-      <button onclick="location.href='/'">Home</button>
+      <button onclick="location.href='../index.html'">Home</button>
     </div>
   </body>
 </html>
