@@ -3,29 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Share+Tech+Mono&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="loginStyles.css" />
   </head>
   <body>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../register/index.html">Register</a>
-    </nav>
-    <div>
-      <h1>>_login</h1>
-      <hr />
+    <div class="header">
+      <h1>>_login<span class="cursor">|</span></h1>
+      <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../register/index.html">Register</a>
+      </nav>
+    </div>
+    <hr />
+    <div class="login-form">
       <form action="../loginSuccess/index.html">
         <!-- relative path -->
         <label for="email"><b>Email</b></label><br />
-        <input type="email" placeholder="Enter Email" id="email" name="email" /><br />
+        <input
+          type="email"
+          placeholder="Enter Email"
+          id="email"
+          name="email"
+        /><br />
         <!-- <input type="email" placeholder="Enter Email" id="email" name="email" required /><br /> -->
         <label for="password"><b>Password</b></label><br />
-        <input type="password" placeholder="Enter Password" id="password" name="password" />
+        <input
+          type="password"
+          placeholder="Enter Password"
+          id="password"
+          name="password"
+        /><br />
         <!-- <input type="password" placeholder="Enter Password" id="password" name="password" required /> -->
         <input type="submit" value="Login" />
       </form>
-      <p>Don't have an account? <a href="../register/index.html">Sign up.</a></p>
-        <hr />
-      <br />
+      <p>
+        Don't have an account? <a href="../register/index.html">Sign up</a>.
+      </p>
+      <hr />
     </div>
   </body>
 </html>

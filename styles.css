@@ -93,12 +93,16 @@ td a:hover {
 }
 
 input[type="submit"] {
+  background-color: #00ff00;
   margin-top: 20px;
   border: none;
   color: #1e1e1e;
   padding: 10px 20px;
   cursor: pointer;
-  animation: colorChange 4s infinite;
+}
+
+input[type="submit"]:hover {
+  animation: colorChange 2s infinite;
 }
 
 label {

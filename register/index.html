@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="registerStyles.css" />
   </head>
   <body>
     <div class="header">
@@ -24,14 +24,16 @@
     <div class="registration-form">
       <form action="../registerSuccess/index.html">
         <!-- relative path -->
-        <label for="username"><b>Username</b></label>
+        <label for="username"><b>Username</b></label
+        ><br />
         <input
           type="text"
           placeholder="Enter Username"
           id="username"
           name="username"
-        />
-        <label for="email"><b>Email</b></label>
+        /><br />
+        <label for="email"><b>Email</b></label
+        ><br />
         <input
           type="email"
           placeholder="Enter Email"
@@ -40,34 +42,36 @@
           required
         /><br />
         <!-- <input type="email" placeholder="Enter Email" id="email" name="email" required /><br /> -->
-        <label for="password"><b>Password</b></label>
+        <label for="password"><b>Password</b></label
+        ><br />
         <input
           type="password"
           placeholder="Enter Password"
           id="password"
           name="password"
           required
-        />
+        /><br />
         <!-- <input type="password" placeholder="Enter Password" id="password" name="password" required /> -->
-        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <label for="psw-repeat"><b>Repeat Password</b></label
+        ><br />
         <input
-          type="psw-repeat"
+          type="password"
           placeholder="Enter Password"
           id="psw-repeat"
           name="psw-repeat"
           required
-        />
+        /><br />
         <!-- <input type="password" placeholder="Enter Password" id="password" name="password" required /> -->
         <input
-          onclick="location.href='registered.html'"
+          onclick="location.href='../registerSuccess/index.html'"
           type="submit"
           value="Register"
-        /><!-- not working -->
+        />
       </form>
-      <p>Already have an account? <a href="../login/index.html">Sign in.</a></p>
+      <p>Already have an account? <a href="../login/index.html">Sign in</a>.</p>
       <hr />
       <p>
-        By creating an account you agree to our <a href="#">Terms & Privacy</a>
+        By creating an account you agree to our <a href="#">Terms & Privacy</a>.
       </p>
     </div>
   </body>
