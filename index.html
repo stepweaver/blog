@@ -3,26 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Share+Tech+Mono&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stepweaver Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <!-- Only I will be able to create blog posts. Use WYSIWYG? -->
-      <a href="./login/index.html">Login</a>
-      <a href="./register/index.html">Register</a>
-    </nav>
-    <!-- Make it look like a terminal! -->
-    <h1>>_blog</h1>
+    <div class="header">
+      <h1>>_blog<span class="cursor">|</span></h1>
+      <nav class="navbar">
+        <!-- Only I will be able to create blog posts. Use WYSIWYG? -->
+        <a href="./login/index.html">Login</a>
+        <a href="./register/index.html">Register</a>
+      </nav>
+    </div>
+    <hr />
     <section>
-      <!-- Will use DD MMM YYYY dating for all posts -->
-      <h2>01 JUN 2024</h2>
       <!-- article element used for posts -->
-      <article>
-        <h3>First Post!</h3>
+      <article class="post">
+        <!-- Will use DD MMM YYYY dating for all posts -->
+        <h2 class="date">
+          01 JUN 2024 - <span class="post-title">First Post!</span>
+        </h2>
         <a href="https://homestarrunner.com/sbemails"
-          ><img src="./assets/strongbad.jpg" alt="Strong Bad"
+          ><img
+            class="post-image"
+            src="./assets/strongbad.jpg"
+            alt="Strong Bad"
         /></a>
-        <p>This is my first official blog post! Welcome!</p>
+        <p class="post-body">This is my first official blog post! Welcome!</p>
         <!-- I don't like the way this list renders -->
         <table cellpadding="5">
           <tr>
@@ -48,7 +61,7 @@
         </table>
         <table cellpadding="5">
           <tr>
-            <th align="left">What I'm working on:</th>
+            <th>What I'm working on:</th>
           </tr>
           <tr>
             <td>
@@ -84,14 +97,12 @@
             <td>CODE!</td>
           </tr>
         </table>
-        <br />
         <form>
           <input type="radio" id="like" name="feedback" value="like" />
-          <label for="like">👍Like</label><br />
+          <label for="like">👍Like</label>
           <input type="radio" id="dislike" name="feedback" value="dislike" />
-          <label for="dislike">👎Dislike</label><br />
+          <label for="dislike">👎Dislike</label>
         </form>
-        <br />
         <!-- Only registerered users will be able to comment -->
         <form action="./addComment/index.html">
           <!-- absolute path -->

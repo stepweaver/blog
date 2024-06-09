@@ -1,3 +1,135 @@
-h1 {
+body {
+  background-color: #1e1e1e;
+  color: #00ff00;
+  font-family: "Share Tech Mono", monospace;
+  margin: 0;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #00ff00;
+}
+
+nav a {
+  color: #00ff00;
+  font-size: larger;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
   text-decoration: underline;
+  animation: textChange 2s infinite;
+}
+
+hr {
+  border: 1px dashed #00ff00;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #00ff00;
+}
+
+.post-image:hover {
+  animation: textChange 2s infinite;
+  border: 3px solid;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+td a {
+  color: #00ff00;
+  text-decoration: none;
+  animation: textChange 4s infinite;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #00ff00;
+  }
+  50% {
+    background-color: #ff00ff;
+  }
+  100% {
+    background-color: #00ff00;
+  }
+}
+
+@keyframes textChange {
+  0% {
+    color: #00ff00;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #00ff00;
+  }
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  border: none;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  cursor: pointer;
+  animation: colorChange 4s infinite;
+}
+
+label {
+  color: #00ff00;
+}
+
+textarea {
+  background-color: #333;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.cursor {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #00ff00;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
