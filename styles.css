@@ -73,6 +73,15 @@ button:hover {
   animation: colorChange 2s infinite;
 }
 
+p a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
 /* Class Selectors */
 .cursor {
   margin-left: 5px;
@@ -108,15 +117,6 @@ button:hover {
 .navbar a:hover {
   text-decoration: underline;
   animation: textChange 2s infinite;
-}
-
-p a {
-  color: #00ff00;
-  text-decoration: none;
-}
-
-p a:hover {
-  text-decoration: underline;
 }
 
 .post-image {
@@ -159,7 +159,20 @@ p a:hover {
 .wrapper {
   display: flex;
   align-items: flex-start;
-  width: 60%
+  width: 60%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.register a:hover, .terms a:hover, .login a:hover{
+  text-decoration: underline;
+  animation: textChange 2s infinite;
 }
 
 /* ID Selectors */
