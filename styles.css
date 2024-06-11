@@ -59,6 +59,20 @@ ul a {
   color: #00ff00;
 }
 
+input[type="submit"],
+button {
+  background-color: #00ff00;
+  border: none;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  animation: colorChange 2s infinite;
+}
+
 /* Class Selectors */
 .cursor {
   margin-left: 5px;
@@ -72,20 +86,6 @@ ul a {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-}
-
-.input[type="submit"],
-button {
-  background-color: #00ff00;
-  border: none;
-  color: #1e1e1e;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.input[type="submit"]:hover,
-button:hover {
-  animation: colorChange 2s infinite;
 }
 
 .label {
