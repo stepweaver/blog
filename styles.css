@@ -1,3 +1,4 @@
+/* Element Selectors */
 body {
   background-color: #1e1e1e;
   color: #00ff00;
@@ -7,32 +8,115 @@ body {
   padding-top: 0;
 }
 
+form {
+  margin-top: 20px;
+}
+
+hr {
+  border: 1px dashed #00ff00;
+  margin-top: 20px;
+}
+
+input {
+  background-color: #1e1e1e;
+  color: #00ff00;
+  border: 1px solid #333;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+td a {
+  color: #00ff00;
+  text-decoration: none;
+  animation: textChange 4s infinite;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+th, td {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: #00ff00;
+}
+
+/* Class Selectors */
+.cursor {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #00ff00;
+  animation: blink 1s infinite;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 60%;
 }
 
-h1,
-h2,
-h3 {
+.input[type="submit"],
+button {
+  background-color: #00ff00;
+  border: none;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.input[type="submit"]:hover,
+button:hover {
+  animation: colorChange 2s infinite;
+}
+
+.label {
   color: #00ff00;
 }
 
-nav a {
+.main {
+  flex: 4;
+  padding: 10px;
+  margin: auto;
+}
+
+.navbar a {
   color: #00ff00;
   font-size: larger;
   text-decoration: none;
   margin-right: 10px;
 }
 
-nav a:hover {
+.navbar a:hover {
   text-decoration: underline;
   animation: textChange 2s infinite;
 }
 
-hr {
-  border: 1px dashed #00ff00;
+p a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
 }
 
 .post-image {
@@ -46,26 +130,54 @@ hr {
   border: 3px solid;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 30px;
+.registration-form {
+  margin: 30px 0;
 }
 
-th,
-td {
-  padding: 8px;
-  text-align: left;
+.sidebar {
+  flex: 1;
+  padding: 10px;
+  order: -1;
+  position: sticky;
+  top: 0;
 }
 
-td a {
+.sidebar ul a {
   color: #00ff00;
   text-decoration: none;
-  animation: textChange 4s infinite;
 }
 
-td a:hover {
+.sidebar ul a:hover {
+  animation: textChange 2s infinite;
   text-decoration: underline;
+}
+
+.sidebarnav li{
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 60%
+}
+
+/* ID Selectors */
+#comment {
+  background-color: #333;
+}
+
+/* Animations */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes colorChange {
@@ -89,51 +201,5 @@ td a:hover {
   }
   100% {
     color: #00ff00;
-  }
-}
-
-input[type="submit"] {
-  background-color: #00ff00;
-  margin-top: 20px;
-  border: none;
-  color: #1e1e1e;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  animation: colorChange 2s infinite;
-}
-
-label {
-  color: #00ff00;
-}
-
-textarea {
-  background-color: #333;
-  color: #00ff00;
-  border: 1px solid #00ff00;
-}
-
-form {
-  margin-top: 30px;
-}
-
-.cursor {
-  margin-left: 5px;
-  font-weight: bold;
-  color: #00ff00;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
