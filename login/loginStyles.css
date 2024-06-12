@@ -3,7 +3,6 @@
   --main-bg-color: #1e1e1e;
   --main-text-color: #00ff00;
   --main-font-family: "Share Tech Mono", monospace;
-  --secondary-font-family: "Syne Mono", sans-serif;
   --main-input-color: #333;
   --secondary-color: #ff00ff;
 }
@@ -12,74 +11,24 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: var(--main-font-family), monospace;
+  font-family: "Share Tech Mono", monospace;
   margin: 0;
   padding: 20px;
   padding-top: 0;
 }
 
-form {
-  margin-top: 20px;
-}
-
-hr {
-  border: 1px dashed var(--main-text-color);
-  margin-top: 20px;
-}
-
 input {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  border: 1px solid var(--main-input-color);
+  border: none;
+  border-bottom: 1px solid var(--main-input-color);
   padding: 8px;
   margin: 10px 0;
 }
 
-textarea {
-  color: var(--main-text-color);
+input:focus {
   outline: none;
-  padding: 8px;
-  margin: 10px 0;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 30px;
-}
-
-td a {
-  color: var(--main-text-color);
-  text-decoration: none;
-  animation: textChange 4s infinite;
-}
-
-td a:hover {
-  text-decoration: underline;
-}
-
-th, td {
-  text-align: left;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0 10px;
-  margin: 0;
-}
-
-ul a {
-  text-decoration: none;
-  color: var(--main-text-color);
-}
-
-ul a:hover {
-  text-decoration: underline;
-  animation: textChange 2s infinite;
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 input[type="submit"] {
@@ -94,6 +43,16 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   animation: colorChange 2s infinite;
+}
+
+p a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+  animation: textChange 2s infinite;
 }
 
 /* Class Selectors */
@@ -115,10 +74,6 @@ input[type="submit"]:hover {
   color: var(--main-text-color);
 }
 
-.main {
-  flex: 5;
-}
-
 .navbar a {
   color: var(--main-text-color);
   font-size: larger;
@@ -131,64 +86,8 @@ input[type="submit"]:hover {
   animation: textChange 2s infinite;
 }
 
-.title {
-  font-size: 2em;
-  font-family: var(--secondary-font-family);
-  color: var(--main-text-color);
-}
-
-.post-image {
-  max-width: 100%;
-  height: auto;
-  border: 5px solid var(--main-text-color);
-}
-
-.post-image:hover {
-  animation: textChange 2s infinite;
-  border: 5px solid;
-}
-
-.sidebar {
-  flex: 2;
-  order: -1;
-  position: sticky;
-  top: 0;
-  font-family: var(--secondary-font-family);
-}
-
-.sidebarnavTitle {
-  font-family: var(--main-font-family);
-}
-
-.sidebar ul a {
-  color: var(--main-text-color);
-  text-decoration: none;
-  font-size: small;
-}
-
-.sidebar ul a:hover {
-  animation: textChange 2s infinite;
-  text-decoration: underline;
-}
-
-.sidebarnav li{
-  margin-bottom: 10px;
-}
-
-.wrapper {
-  display: flex;
-  align-items: flex-start;
-  width: 60%;
-}
-
-.parts, .resources {
-  text-decoration: underline;
-}
-
-/* ID Selectors */
-#comment {
-  background-color: var(--main-input-color);
-  color: var(--main-text-color);
+.login-form {
+  margin: 30px 0;
 }
 
 /* Animations */

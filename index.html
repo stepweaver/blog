@@ -17,25 +17,38 @@
       <h1>>_blog<span class="cursor">|</span></h1>
       <nav class="navbar">
         <!-- Only I will be able to create blog posts. Use WYSIWYG? -->
+        <!-- ? How do I use markdown to make blog posts? -->
         <a href="./login/index.html">Login</a>
         <a href="./register/index.html">Register</a>
       </nav>
     </div>
     <div class="wrapper">
       <div class="sidebar">
-        <h2 class="sidebarnavTitle">>_posts</h2>
+        <h3 class="sidebarnavTitle">>_posts</h3>
         <ul class="sidebarnav">
+          <!-- href='#01-jun-2024' (post id) same page relative paths. id name must is the path. -->
           <li><a href="#01-jun-2024">RetroPie</a> 🕹️</li>
+          <!-- NetworkChuck just posted an RetroPie video. Reference this in post. https://www.youtube.com/watch?v=AaseHnf0k2o&t=75s -->
           <li><a href="#11-jun-2024">11 JUN 2024</a></li>
+          <!-- Can't afford the parts right now 😔 -->
           <li><a href="#01-jun-2024">01 JUN 2024 - First Post</a></li>
         </ul>
-        <h2 class="sidebarnavTitle">>_projects</h2>
-        <h2 class="sidebarnavTitle">>_podcasts</h2>
+        <h3 class="sidebarnavTitle">>_projects</h3>
+        <h3 class="sidebarnavTitle">>_podcasts</h3>
       </div>
       <section class="main">
-        <!-- article element used for posts -->
+        <!-- Wrap posts in <article> tag -->
+        <!-- Template article:
         <article class="post">
-          <h2 class="date" id="11-jun-2024">
+          <h2 class="date" id="DD-MMM-YYYY">
+            DD MMM YYYY - <span class="post-title">Title</span>
+          </h2>
+          <img class="post-image" src="./assets/image.jpg" alt="Image" />
+          <p class="post-body">Post body</p>
+        </article>
+        -->
+        <article class="post">
+          <h2 class="title" id="11-jun-2024">
             11 JUN 2024 - <span class="post-title">Build a NAS</span>
           </h2>
           <iframe
@@ -53,8 +66,8 @@
             <li>
               <a
                 href="https://www.friendlyelec.com/index.php?route=product/product&product_id=294&search=cm3588&description=true&category_id=0&sub_category=true"
-                >FriendlyELEC CM3588 NAS Kit</a
-              >
+                >FriendlyELEC CM3588 NAS Kit
+              </a>
               - $184
             </li>
             <li>SSD Cards</li>
@@ -88,9 +101,8 @@
             <input type="radio" id="dislike" name="feedback" value="dislike" />
             <label for="dislike">👎Dislike</label>
           </form>
-          <!-- Only registerered users will be able to comment -->
+          <!-- Only registerered users will be able to comment. -->
           <form action="./addComment/index.html">
-            <!-- absolute path -->
             <label for="comment">Comment:</label><br />
             <textarea id="comment" name="comment" rows="4" cols="50"></textarea
             ><br />
@@ -99,8 +111,8 @@
         </article>
         <hr />
         <article class="post">
-          <!-- Will use DD MMM YYYY dating for all posts -->
-          <h2 class="date" id="01-jun-2024">
+          <!-- Will use DD MMM YYYY dating for all posts. id name must match relative path in .sidebar -->
+          <h2 class="title" id="01-jun-2024">
             01 JUN 2024 - <span class="post-title">First Post!</span>
           </h2>
           <a href="https://homestarrunner.com/sbemails"
@@ -110,7 +122,6 @@
               alt="Strong Bad"
           /></a>
           <p class="post-body">This is my first official blog post! Welcome!</p>
-          <!-- I don't like the way this list renders -->
           <table cellpadding="5">
             <tr>
               <th>My Vision for this blog:</th>
@@ -177,9 +188,7 @@
             <input type="radio" id="dislike" name="feedback" value="dislike" />
             <label for="dislike">👎Dislike</label>
           </form>
-          <!-- Only registerered users will be able to comment -->
           <form action="./addComment/index.html">
-            <!-- absolute path -->
             <label for="comment">Comment:</label><br />
             <textarea id="comment" name="comment" rows="4" cols="50"></textarea
             ><br />

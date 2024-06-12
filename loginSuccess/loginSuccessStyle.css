@@ -1,0 +1,77 @@
+/* Use variables for easy to update later. */
+:root {
+  --main-bg-color: #1e1e1e;
+  --main-text-color: #00ff00;
+  --main-font-family: "Share Tech Mono", monospace;
+  --main-input-color: #333;
+  --secondary-color: #ff00ff;
+}
+
+/* Element Selectors */
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Share Tech Mono", monospace;
+  margin: 0;
+  padding: 20px;
+  padding-top: 0;
+}
+
+button {
+  background-color: var(--main-text-color);
+  border: none;
+  color: var(--main-bg-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+button:hover {
+  animation: colorChange 2s infinite;
+}
+
+/* Class Selectors */
+.cursor {
+  margin-left: 5px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  animation: blink 1s infinite;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+/* ID Selectors */
+#comment {
+  background-color: var(--main-input-color);
+}
+
+/* Animations */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: var(--main-text-color);
+  }
+  50% {
+    background-color: var(--secondary-color);
+  }
+  100% {
+    background-color: var(--main-text-color);
+  }
+}
