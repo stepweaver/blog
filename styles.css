@@ -62,7 +62,8 @@ td a:hover {
   text-decoration: underline;
 }
 
-th, td {
+th,
+td {
   text-align: left;
 }
 
@@ -154,6 +155,7 @@ input[type="submit"]:hover {
   position: sticky;
   top: 0;
   font-family: var(--secondary-font-family);
+  margin-right: 20px;
 }
 
 .sidebarnavTitle {
@@ -171,7 +173,7 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-.sidebarnav li{
+.sidebarnav li {
   margin-bottom: 10px;
 }
 
@@ -181,7 +183,8 @@ input[type="submit"]:hover {
   width: 60%;
 }
 
-.parts, .resources {
+.parts,
+.resources {
   text-decoration: underline;
 }
 
