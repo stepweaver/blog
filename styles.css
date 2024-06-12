@@ -51,12 +51,18 @@ th, td {
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0 10px;
+  margin: 0;
 }
 
 ul a {
   text-decoration: none;
   color: #00ff00;
+}
+
+ul a:hover {
+  text-decoration: underline;
+  animation: textChange 2s infinite;
 }
 
 input[type="submit"],
@@ -102,9 +108,7 @@ p a:hover {
 }
 
 .main {
-  flex: 4;
-  padding: 10px;
-  margin: auto;
+  flex: 5;
 }
 
 .navbar a {
@@ -135,8 +139,7 @@ p a:hover {
 }
 
 .sidebar {
-  flex: 1;
-  padding: 10px;
+  flex: 2;
   order: -1;
   position: sticky;
   top: 0;
@@ -173,6 +176,10 @@ p a:hover {
 .register a:hover, .terms a:hover, .login a:hover{
   text-decoration: underline;
   animation: textChange 2s infinite;
+}
+
+.parts, .resources {
+  text-decoration: underline;
 }
 
 /* ID Selectors */
